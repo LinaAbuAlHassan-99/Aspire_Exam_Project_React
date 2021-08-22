@@ -1,0 +1,379 @@
+.login_container {
+  position: relative;
+  width: 1440px;
+  height: 1024px;
+  top: -8px;
+  background: #ffffff;
+}
+.login_logo {
+  width: 645px;
+  height: 1024px;
+  margin-left: -8px;
+  background: url("../Assets/Login_BG.png") center no-repeat;
+}
+.logo_top {
+  position: absolute;
+  width: 104.55px;
+  height: 47.24px;
+  top: 415px;
+  left: 270.29px;
+  right: 270.16px;
+  bottom: 561.76px;
+}
+.logo_left {
+  position: absolute;
+  width: 35.98px;
+  height: 45.15px;
+  top: 452.75px;
+  left: 275.22px;
+  right: 333.79px;
+  bottom: 526.1px;
+}
+.logo_right {
+  position: absolute;
+  width: 36.78px;
+  height: 45.96px;
+  top: 452.55px;
+  left: 332.98px;
+  right: 275.23px;
+  bottom: 525.49px;
+}
+.logo_bottom {
+  position: absolute;
+  width: 46.78px;
+  height: 53.03px;
+  top: 477.92px;
+  left: 298.8px;
+  right: 299.41px;
+  bottom: 493.06px;
+}
+.E {
+  width: 17.32px;
+  height: 21.6px;
+  position: absolute;
+  top: 556.04px;
+  left: 286.33px;
+  right: 341.34px;
+  bottom: 446.36px;
+}
+.P {
+  width: 19.55px;
+  height: 21.6px;
+  position: absolute;
+  top: 556.04px;
+  left: 307.03px;
+  right: 318.42px;
+  bottom: 446.36px;
+}
+.I {
+  width: 6.13px;
+  height: 21.6px;
+  position: absolute;
+  top: 556.04px;
+  left: 329.54px;
+  right: 309.32px;
+  bottom: 446.36px;
+}
+.C {
+  width: 21.23px;
+  height: 22.34px;
+  position: absolute;
+  top: 555.77px;
+  left: 338.91px;
+  right: 284.85px;
+  bottom: 445.89px;
+}
+.A {
+  width: 25.14px;
+  height: 21.6px;
+  position: absolute;
+  top: 586.93px;
+  left: 238px;
+  right: 381.86px;
+  bottom: 415.47px;
+}
+.CC {
+  width: 21.23px;
+  height: 22.35px;
+  position: absolute;
+  top: 586.59.77px;
+  left: 263.48px;
+  right: 390.28px;
+  bottom: 415.06px;
+}
+.AA {
+  width: 25.14px;
+  height: 21.6px;
+  position: absolute;
+  top: 586.93px;
+  left: 284.45px;
+  right: 335.41px;
+  bottom: 415.47px;
+}
+.D {
+  width: 22.31px;
+  height: 21.67px;
+  position: absolute;
+  top: 586.93px;
+  left: 311.34px;
+  right: 311.34px;
+  bottom: 415.4px;
+}
+.EE {
+  width: 17.39px;
+  height: 21.6px;
+  position: absolute;
+  top: 586.93px;
+  left: 336.89px;
+  right: 290.72px;
+  bottom: 415.47px;
+}
+.M {
+  width: 25.21px;
+  height: 21.6px;
+  position: absolute;
+  top: 586.93px;
+  left: 357.66px;
+  right: 262.13px;
+  bottom: 415.47px;
+}
+.Y {
+  width: 22.65px;
+  height: 21.6px;
+  position: absolute;
+  top: 586.93px;
+  left: 384.42px;
+  right: 237.93px;
+  bottom: 415.47px;
+}
+
+.login_layout {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  top: 320px;
+  left: 867px;
+  right: 223px;
+  bottom: 296;
+  width: 350px;
+  height: 408px;
+}
+.textDiv {
+  width: 260px;
+  height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+}
+.welcome {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #696969;
+}
+.Liya {
+  width: 260px;
+  height: 36px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 150%;
+  color: #333333;
+  margin: 10px 0px;
+}
+
+.login_form {
+  width: 350px;
+  height: 311px;
+  margin-top: 27px;
+}
+.login_form_email_label {
+  width: 35px;
+  height: 21px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  margin: 0px;
+  margin-bottom: 7px;
+  color: #333333;
+}
+
+.login_form_email_input {
+  width: 350px;
+  height: 55px;
+
+  padding: 17px 0px 17px 10px;
+  margin-top: 0px;
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.login_form_email_input::placeholder {
+  width: 35px;
+  height: 21px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #acabab;
+}
+
+.login_form_password_label {
+  width: 62px;
+  height: 21px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #333333;
+  margin-top: 21px;
+  margin-bottom: 7px;
+}
+.login_form_password_input {
+  width: 350px;
+  height: 55px;
+  background: #ffffff;
+  border: 1px solid #e8e8e8;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding: 17px 0px 17px 10px;
+  margin-bottom: 21px;
+}
+.login_form_password_input::placeholder {
+  width: 62px;
+  height: 21px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #acabab;
+}
+
+.login_form_forgptPass {
+  margin-top: 21px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  color: #0d4ba7;
+  margin-left: 238px;
+  margin-right: 0px;
+  text-decoration: none;
+}
+
+.login_form_button {
+  width: 350px;
+  height: 50px;
+  margin-top: 32px;
+  background: #00b761;
+  border-radius: 10px;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 150%;
+  border: none;
+  color: #ffffff;
+
+  padding: 14.5px 157px;
+}
+
+.login_copyright {
+  position: absolute;
+  width: 188px;
+  height: 42px;
+  /* border: 4px solid red; */
+  top: 921px;
+  right: 304px;
+  bottom: 61px;
+  left: 948px;
+}
+
+.copyright_top {
+  width: 32.92px;
+  height: 16.51px;
+  position: absolute;
+}
+.copyright_left {
+  width: 13.28px;
+  height: 19.63px;
+  position: absolute;
+  top: 13.26px;
+}
+.copyright_right {
+  width: 13.38px;
+  height: 19.82px;
+  position: absolute;
+  top: 13.25px;
+  left: 19.55px;
+}
+.copyright_bottom {
+  width: 13.92px;
+  height: 12.01px;
+  position: absolute;
+  top: 21.07px;
+  left: 9.48px;
+  right: 9.59px;
+}
+.newA {
+  position: absolute;
+  width: 7.18px;
+  height: 5.94px;
+  margin: 35.89px 180.82px 0.16px 0px;
+}
+.newS {
+  position: absolute;
+  width: 4.7px;
+  height: 6.19px;
+  margin: 35.81px 175.59px 0px 7.71px;
+}
+.newP {
+  position: absolute;
+  width: 4.77px;
+  height: 5.86px;
+  margin: 35.98px 169.6px 0.17px 13.64px;
+}
+.newI {
+  position: absolute;
+  width: 1.4px;
+  height: 5.86px;
+  margin: 35.98px 167.09px 0.16px 19.51px;
+}
+.newR {
+  position: absolute;
+  width: 5.47px;
+  height: 5.86px;
+  margin: 35.98px 159.97px 0.16px 22.57px;
+}
+.newE {
+  position: absolute;
+  width: 4.1px;
+  height: 5.86px;
+  margin: 35.98px 155px 0.16px 28.9px;
+}
+.login_copyright_text {
+  width: 139px;
+  height: 36px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  color: #696969;
+  margin: 3px 0px 3px 49px;
+}

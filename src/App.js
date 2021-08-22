@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import { Route, Switch } from "react-router-dom";
+import Login from "./pages/Login";
+const App = () => {
+  //localhost:3000/path domain/path
+  // path='/' this is the root witch is //localhost:3000/
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Switch>
+        <Route path="/" exact>
+          <Login />
+        </Route>
+        <Route path="/new1" exact>
+          //comp to render
+        </Route>
+        <Route path="/new2" exact>
+          //comp to render
+        </Route>
+      </Switch>
     </div>
   );
-}
+};
 
 export default App;
