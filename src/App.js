@@ -1,5 +1,5 @@
 import { Route, Switch } from "react-router-dom";
-import Login from "./pages/Login";
+import Card from "./pages/Card";
 const App = () => {
   //localhost:3000/path domain/path
   // path='/' this is the root witch is //localhost:3000/
@@ -7,13 +7,16 @@ const App = () => {
     <div>
       <Switch>
         <Route path="/" exact>
-          <Login />
+          <Card kind="Login" />
         </Route>
-        <Route path="/new1" exact>
-          //comp to render
+        <Route path="/resetpassword">
+          <Card kind="ResetPassword" />
         </Route>
-        <Route path="/new2" exact>
-          //comp to render
+        <Route path="/resetpasswordsecond">
+          <Card kind="ResetPasswordSecond" />
+        </Route>
+        <Route path="/resetpasswordthird">
+          <Card kind="ResetPasswordThird" />
         </Route>
       </Switch>
     </div>
