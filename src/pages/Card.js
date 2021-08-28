@@ -4,7 +4,7 @@ import { Typography, Box, CardMedia, Grid } from "@material-ui/core";
 import useStyles from "./CardStyle";
 
 import LoginForm from "../Components/LoginForm";
-import ResetPasswordForm from "../Components/ResetPasswordForm";
+import ForgotPasswordForm from "../Components/ForgotPasswordForm";
 import ResetPasswordSecondForm from "../Components/ResetPasswordSecondForm";
 import ResetPasswordThirdForm from "../Components/ResetPasswordThirdForm";
 
@@ -14,13 +14,13 @@ import copyright from "../Assets/copyright.png";
 const Card = (props) => {
   const classes = useStyles();
   const isLogin = props.kind === "Login";
-  const isReset = props.kind === "ResetPassword";
+  const isFogot = props.kind === "ForgotPassword";
   const isResetSeconde = props.kind === "ResetPasswordSecond";
   const isResetThird = props.kind === "ResetPasswordThird";
 
   return (
     <Grid container>
-      <Grid item xs={5}>
+      <Grid item lg={5} xs={5}>
         <Box component="div" display="block" className={classes.logoContainer}>
           <Box
             component="div"
@@ -35,27 +35,28 @@ const Card = (props) => {
         </Box>
       </Grid>
 
-      <Grid item xs={7}>
+      <Grid item lg={7} xs={7}>
         <Box component="div" display="block" className={classes.Layout}>
           {isLogin && <LoginForm />}
-          {isReset && <ResetPasswordForm />}
+          {isFogot && <ForgotPasswordForm />}
           {isResetSeconde && <ResetPasswordSecondForm />}
           {isResetThird && <ResetPasswordThirdForm />}
-        </Box>
-        <Box className={classes.login_copyright}>
-          <CardMedia
-            image={copyright}
-            title="copyright"
-            className={classes.copyrightLogo}
-          />
-          <Typography
-            display="block"
-            variant="body1"
-            className={classes.login_copyright_text}
-          >
-            Powered by ASPIRE <br />
-            ©2021 All rights reserved.
-          </Typography>
+
+          <Box className={classes.login_copyright}>
+            <img
+              src={copyright}
+              title="copyright"
+              className={classes.copyrightLogo}
+            />
+            <Typography
+              display="block"
+              variant="body1"
+              className={classes.login_copyright_text}
+            >
+              Powered by ASPIRE <br />
+              ©2021 All rights reserved.
+            </Typography>
+          </Box>
         </Box>
       </Grid>
     </Grid>

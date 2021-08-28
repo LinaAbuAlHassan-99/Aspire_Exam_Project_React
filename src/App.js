@@ -9,13 +9,13 @@ const App = () => {
         <Route path="/" exact>
           <Card kind="Login" />
         </Route>
-        <Route path="/resetpassword">
-          <Card kind="ResetPassword" />
+        <Route path="/forgotpassword">
+          <Card kind="ForgotPassword" />
         </Route>
         <Route path="/resetpasswordsecond">
           <Card kind="ResetPasswordSecond" />
         </Route>
-        <Route path="/resetpasswordthird">
+        <Route path="resetpasswordthird">
           <Card kind="ResetPasswordThird" />
         </Route>
       </Switch>

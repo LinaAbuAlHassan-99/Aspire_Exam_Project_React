@@ -1,2 +1,5 @@
 import { combineReducers } from "redux";
-export const Reducers = combineReducers({});
+import { getLoginDataReducer } from "./LoginUserReducer";
+export const Reducers = combineReducers({
+  getLoginDataReducer: getLoginDataReducer,
+});

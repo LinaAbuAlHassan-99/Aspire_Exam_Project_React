@@ -2,64 +2,57 @@ import { makeStyles } from "@material-ui/core/styles";
 import Login_BG from "../Assets/Login_BG.png";
 const useStyles = makeStyles((theme) => ({
   logoContainer: {
-    position: "relative",
-    width: "100%", //have the 5 grid col
+    width: "100%",
     height: "100vh",
     backgroundImage: `url(${Login_BG})`,
+    position: "relative",
   },
   loginLogo: {
-    position: "absolute",
-    top: "0%",
-    left: "0%",
     background: "#2582F0",
     opacity: 0.6,
     width: "100%",
-    height: "100vh",
+    height: "100%",
     mixBlendMode: "multiply",
   },
 
   EpicAcademy: {
     position: "absolute",
-    textAlign: "center",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
+    top: "40.5%",
+    left: "36.8%",
     width: "26%",
     height: "26%",
-    transition: theme.transitions.create("transform"),
   },
   Layout: {
     position: "relative",
-    width: "100%", //have the 7 grid col
-    height: "90vh",
+    width: "100%",
+    height: "100vh",
   },
 
   login_copyright: {
-    display: "flex",
-    flexWrap: "nowrap",
-    alignContent: "stretch",
-    justifyContent: "center",
-    alignItems: "center",
-
-    // width: "21%",
-    // height: "5.7%",
-    // border: "solid",
+    position: "relative",
+    width: "23.6%",
+    hight: "40.1%",
+    top: "89.9%",
+    left: "38%",
+    backgroundColor: "pink",
   },
   copyrightLogo: {
-    width: 33, //"17.5%",
-    height: 42, //"100%",
+    position: "absolute",
+    width: "17.5%",
+    hight: "100%",
   },
   login_copyright_text: {
-    // width: "15%",
-    // height: "4.9%",
-    marginLeft: 16.07,
+    position: "absolute",
     fontFamily: "Roboto",
     fontStyle: "normal",
     fontWeight: "normal",
-    fontSize: 12,
+    fontSize: "0.86vw",
     lineHeight: "150%",
     color: "#696969",
-    // margin: 3px 0px 3px 49,
+    width: "73.9%",
+    hight: "85.7%",
+    marginTop: "0.1953125vw",
+    marginLeft: "3.1901041666666665vw",
   },
 }));
 
