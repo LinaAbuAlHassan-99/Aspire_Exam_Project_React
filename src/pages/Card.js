@@ -15,8 +15,8 @@ const Card = (props) => {
   const classes = useStyles();
   const isLogin = props.kind === "Login";
   const isFogot = props.kind === "ForgotPassword";
-  const isResetSeconde = props.kind === "ResetPasswordSecond";
-  const isResetThird = props.kind === "ResetPasswordThird";
+  const isResetSeconde = props.kind === "ResetPassword";
+  const isResetThird = props.kind === "ResetPasswordSecond";
 
   return (
     <Grid container>

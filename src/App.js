@@ -6,17 +6,18 @@ const App = () => {
   return (
     <div>
       <Switch>
-        <Route path="/" exact>
+        <Route path="/" exact></Route>
+        <Route path="/login" exact>
           <Card kind="Login" />
         </Route>
         <Route path="/forgotpassword">
           <Card kind="ForgotPassword" />
         </Route>
+        <Route path="/resetpassword">
+          <Card kind="ResetPassword" />
+        </Route>
         <Route path="/resetpasswordsecond">
           <Card kind="ResetPasswordSecond" />
-        </Route>
-        <Route path="resetpasswordthird">
-          <Card kind="ResetPasswordThird" />
         </Route>
       </Switch>
     </div>

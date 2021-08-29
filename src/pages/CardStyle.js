@@ -3,11 +3,13 @@ import Login_BG from "../Assets/Login_BG.png";
 const useStyles = makeStyles((theme) => ({
   logoContainer: {
     width: "100%",
-    height: "100vh",
+    height: "100%",
     backgroundImage: `url(${Login_BG})`,
     position: "relative",
   },
+
   loginLogo: {
+    position: "absolute",
     background: "#2582F0",
     opacity: 0.6,
     width: "100%",
