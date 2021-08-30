@@ -5,8 +5,8 @@ import useStyles from "./CardStyle";
 
 import LoginForm from "../Components/LoginForm";
 import ForgotPasswordForm from "../Components/ForgotPasswordForm";
+import ResetPasswordForm from "../Components/ResetPasswordForm";
 import ResetPasswordSecondForm from "../Components/ResetPasswordSecondForm";
-import ResetPasswordThirdForm from "../Components/ResetPasswordThirdForm";
 
 import Epic_Academy from "../Assets/Epic_Academy.png";
 import copyright from "../Assets/copyright.png";
@@ -39,8 +39,8 @@ const Card = (props) => {
         <Box component="div" display="block" className={classes.Layout}>
           {isLogin && <LoginForm />}
           {isFogot && <ForgotPasswordForm />}
-          {isResetSeconde && <ResetPasswordSecondForm />}
-          {isResetThird && <ResetPasswordThirdForm />}
+          {isResetSeconde && <ResetPasswordForm />}
+          {isResetThird && <ResetPasswordSecondForm />}
 
           <Box className={classes.login_copyright}>
             <img
@@ -53,8 +53,7 @@ const Card = (props) => {
               variant="body1"
               className={classes.login_copyright_text}
             >
-              Powered by ASPIRE <br />
-              ©2021 All rights reserved.
+              Powered by ASPIRE ©2021 All rights reserved.
             </Typography>
           </Box>
         </Box>

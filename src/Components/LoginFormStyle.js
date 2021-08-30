@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     position: "relative",
     width: "100%",
     height: "76%",
-    marginTop: "3.6535859269282813vh",
+    top: "3.6535859269282813vh",
   },
   form_email_label: {
     fontFamily: "Roboto",
@@ -57,6 +57,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "0.6811989100817438vh",
     paddingLeft: "0.6510416666666666vw",
     top: "9%",
+    color: "#acabab",
   },
   form_password_label: {
     position: "absolute",
@@ -78,6 +79,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: "0.6811989100817438vh",
     paddingLeft: "0.6510416666666666vw",
     top: "42.4%",
+    color: "#acabab",
   },
 
   form_forgptPass: {

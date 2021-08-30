@@ -1,16 +1,17 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import { Button, Typography, Box, TextField } from "@material-ui/core";
-import useStyles from "./ResetPasswordSecondFormStyle";
+import { Button, Typography, Box, CardMedia } from "@material-ui/core";
+import useStyles from "./ResetPasswordSecondFormstyle";
 import arrowIcon from "../Assets/arrowIcon.png";
+import DoneThirdForm from "../Assets/DoneThirdForm.png";
 
-const ResetPasswordSecondForm = () => {
+const ResetPasswordThirdForm = () => {
   const classes = useStyles();
   return (
     <Box className={classes.Div}>
       <Box component="div" display="block" className={classes.textDiv}>
         <Box component="div" display="block" className={classes.linkDiv}>
-          <Link to="/" className={classes.form_Back_to_login}>
+          <Link to="/login" className={classes.form_Back_to_login}>
             <img src={arrowIcon} alt="E" className={classes.arrowIcon} />
             Back to login
           </Link>
@@ -19,56 +20,22 @@ const ResetPasswordSecondForm = () => {
           Reset your Password
         </Typography>
       </Box>
-
-      <form className={classes.form}>
-        <Typography
-          display="block"
-          variant="body1"
-          className={classes.form_pass_label}
-        >
-          New password
-        </Typography>
-
-        <TextField
-          className={classes.form_pass_input}
-          variant="outlined"
-          name="newpass"
-          id="newpass"
-          // label="Email"
-          placeholder="New password"
-          required
-          InputProps={{
-            className: classes.Placeholder,
-          }}
-        />
-
-        <Typography
-          display="block"
-          variant="body1"
-          className={classes.form_passRetype_label}
-        >
-          Retype new password
-        </Typography>
-
-        <TextField
-          className={classes.form_passRetype_input}
-          variant="outlined"
-          name="newpass"
-          id="newpass"
-          // label="Email"
-          placeholder="Retype new password"
-          required
-          InputProps={{
-            className: classes.Placeholder,
-          }}
-        />
-
+      <Box component="div" display="block" className={classes.doneBox}>
+        <Box component="div" display="block" className={classes.doneDiv}>
+          <CardMedia
+            image={DoneThirdForm}
+            title="donethirdform"
+            className={classes.doneThirdForm}
+          />
+          <Typography variant="body1" className={classes.yphbrs}>
+            Your password has been reset successfully!
+          </Typography>
+        </Box>
         <Button className={classes.buttonStyle} variant="outlined">
-          Reset your password
+          Back to login
         </Button>
-      </form>
+      </Box>
     </Box>
   );
 };
-
-export default ResetPasswordSecondForm;
+export default ResetPasswordThirdForm;
