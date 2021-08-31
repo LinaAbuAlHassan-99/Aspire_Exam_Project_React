@@ -36,7 +36,6 @@ const useStyles = makeStyles((theme) => ({
     hight: "40.1%",
     top: "89.9%",
     left: "38%",
-    backgroundColor: "pink",
   },
   copyrightLogo: {
     position: "absolute",
